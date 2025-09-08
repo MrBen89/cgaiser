@@ -1,0 +1,31 @@
+<head>
+    <title>CGA-iser</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="banner">
+        <h1>CGA-arise your image!</h1>
+        <p>Warning, results will be ugly</p>
+    </div>
+    <div class="content">
+        <input type="file" id="imgUpHidden" accept="image/*">
+    
+    <div class="horizontal">
+        <div class="canvas-box">
+            <canvas id="original" width="320" height="200"></canvas>
+            <h3>Original Image</h3>
+        </div>
+        
+        <div class="canvas-box">
+            <canvas id="cga" width="320" height="200"></canvas>
+            <h3>CGA Graphics</h3>
+        </div>
+    </div>
+    <div class="center">
+        <input id="imgUp" type="button" value="Choose a File" onclick="document.getElementById('imgUpHidden').click();" />
+    </div>
+    </div>
+    
+    <script src="script.js"> </script>
+</body>
